@@ -6,16 +6,28 @@ This application simulates a trading bot that executes buy and sell actions base
 
 Initial State:
 
-The bot starts with a default balance, which can be configured through an environment variable (BALANCE).
+The bot starts with a default balance, configurable through the environment variable BALANCE.
+
+
 Price Changes:
 
-The bot uses a dynamic mock API to get an array of stock prices. The last two prices are used to calculate the percentage change.
+The bot fetches an array of stock prices from a dynamic mock API.
+It uses the last two prices to calculate the percentage change.
+
+
 Trading Conditions:
 
-Buying: If the price decreases by 2% or more and there is sufficient balance, the bot will buy as many shares as possible.
-Selling: If the price increases by 3% or more and the bot holds shares, it will sell all shares.
-Each buy or sell action updates the balance, holdings, and trade history.
+Buying:
+If the price decreases by 2% or more and there is sufficient balance, the bot will buy as many shares as possible.
+Selling:
+If the price increases by 3% or more and the bot holds shares, it will sell all shares.
+Each buy or sell action updates:
+Balance
+Holdings
+Trade history
 Profit and Loss Calculation:
+
+The bot calculates total assets, total profit, and average profit per trade based on executed trades.
 
 The bot calculates total assets, total profit, and average profit per trade based on executed trades.
 API Usage
