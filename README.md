@@ -44,3 +44,6 @@ Get Trading Report:
 URL: http://localhost:6001/api/report
 Method: GET
 Description: Retrieves the current balance, holdings, total assets, trade history, and other metrics.
+
+
+![Screenshot (602)](https://github.com/user-attachments/assets/54a53181-6d7b-48d5-ac1e-c4f91301b920)
