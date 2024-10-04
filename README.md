@@ -39,6 +39,8 @@ Method: POST
 Description: Executes the trading strategy based on the latest stock prices.
 Response:
 "Trading executed successfully." (if executed without errors)
+
+
 Get Trading Report:
 
 URL: http://localhost:6001/api/report
